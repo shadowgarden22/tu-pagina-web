@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página 1</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #d9f2d0, #b8d8ba, #d8c4e8);
+            color: #263326;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: blueviolet
+        }
+
+        .logo-cabecera {
+            width: 200px;
+            height: auto;
+        }
+
+        .barra-de-navegacion {
+            margin-top: 12px;
+        }
+
+        .botton-nav {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .botton-nav:hover {
+            background-color: darkblue;
+        }
+
+        .activo {
+            background-color: darkblue;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        section {
+            width: 75%;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #5b2c83;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <h1>Mi Sitio Web</h1>
+
+            <nav class="barra-de-navegacion">
+                <a href="semantica.html" class="botton-nav activo">Página 1</a>
+                <a href="semantica2.html" class="botton-nav">Página 2</a>
+                <a href="semantica3.html" class="botton-nav">Página 3</a>
+            </nav>
+        </div>
+
+        <img src="imagenes/garden.gif"
+             alt="Imagen de jardín"
+             class="logo-cabecera">
+
+    </header>
+
+    <main>
+
+        <aside>
+            <h3>Anuncio</h3>
+            <img src="imagenes/coca-cola xd.gif">
+        
+        </aside>
+        
+<section class="critica">
+    <article>
+        <h2>Crítica sobre The Eminence in Shadow</h2>
+
+        <div class="critica-contenido">
+            <div class="texto-critica">
+                <p>
+                    <strong>The Eminence in Shadow</strong> es una obra maestra y una
+                    hermosura de anime. Destaca por su increíble combinación de acción,
+                    comedia, fantasía y momentos épicos. Cid Kagenou es un protagonista
+                    único, misterioso y extremadamente poderoso, cuyas ocurrencias hacen
+                    que la historia sea divertida y emocionante.
+                </p>
+            </div>
+
+            <img src="imagenes/imagen.jpg" alt="The Eminence in Shadow" class="imagen-shadow">
+        </div>
+
+        <p>
+            La animación, las peleas y la ambientación hacen que cada episodio sea
+            espectacular. Sin duda, es un anime que vale la pena disfrutar.
+        </p>
+    </article>
+</section>
+
+<style>
+    .critica {
+        max-width: 750px;
+        margin: 30px auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #171126, #30204f, #111827);
+        color: white;
+        border-radius: 12px;
+        box-shadow: 0 3px 15px rgba(50, 20, 90, 0.5);
+    }
+
+    .critica h2 {
+        text-align: center;
+        color: #d8b4fe;
+    }
+
+    .critica-contenido {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .texto-critica {
+        flex: 1;
+    }
+
+    .critica p {
+        line-height: 1.6;
+        color: #e5e7eb;
+    }
+
+    .imagen-shadow {
+        width: 120px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+        box-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
+    }
+</style>
+
+    </main>
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+
+</html>
